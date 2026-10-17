@@ -8,17 +8,17 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        int r,c;
+        ll r,c;
         cin>>r>>c;
-        int res=0;
-        int max_rc=max(r,c);
-        if(max_rc&1){
-            if(r>c) res=pow(r-1,2)+c;
-            else res=pow(c,2)-(r-1);
+        ll res=0;
+        ll n=max(r,c);
+        if(n&1){
+            if(r>c) res=(r-1)*(r-1)+c;
+            else res=c*c-(r-1);
         }
         else{
-            if(r>c) res=pow(r,2)-(c-1);
-            else res=pow(c-1,2)+r;
+            if(r>c) res=r*r-(c-1);
+            else res=(c-1)*(c-1)+r;
         }
         cout<<res<<endl;
     }
