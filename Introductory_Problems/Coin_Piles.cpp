@@ -5,12 +5,13 @@ using ll = long long;
 constexpr ll MOD = 1e9 + 7;
 
 int main() {
-    int t;
+    ll t;
     cin >> t;
     while (t--) {
-        int a,b;
+        ll a,b;
         cin>>a>>b;
-        if((a+b)%3==0) cout<<"YES"<<endl;
+        ll minab=min(a,b),diff=abs(a-b);
+        if((a+b)%3==0 && diff<=minab) cout<<"YES"<<endl;
         else cout<<"NO"<<endl; 
     }
     return 0;
