@@ -5,13 +5,13 @@ using ll = long long;
 constexpr ll MOD = 1e9 + 7;
 
 int main() {
-    int n;
+    ll n;
     cin>>n;
     set<ll>s;
-    for(int i=0;i<n;i++){
+    for(ll i=0;i<n;i++){
         ll a;
         cin>>a;
-        s.insert(a)
+        s.insert(a);
     }
     cout<<s.size();
 
