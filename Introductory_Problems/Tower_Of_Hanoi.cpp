@@ -21,6 +21,7 @@ void toh(ll S,ll M,ll D,ll n){
 int main() {
     ll n;
     cin>>n;
+    //2^n-1 moves
     ll ans=(1<<n)-1;
     cout<<ans<<endl;
     toh(1,2,3,n);
