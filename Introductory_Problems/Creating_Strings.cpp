@@ -5,7 +5,7 @@ using ll = long long;
 constexpr ll MOD = 1e9 + 7;
 
 void permutationstr(set<string> &a,string s,ll idx){
-    if(idx== (s.size())) {
+    if(idx== s.size()) {
         a.insert(s);
         return;
     }
@@ -23,7 +23,7 @@ int main() {
     cin>>s;
     set<string>a;
     permutationstr(a,s,0);
-    
+    cout<<a.size()<<"\n";
     for(auto &i:a){
         cout<<i<<endl;
     }
