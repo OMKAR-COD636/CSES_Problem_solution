@@ -4,16 +4,16 @@ using ll = long long;
 
 constexpr ll MOD = 1e9 + 7;
 
-bool safe(vector<vector<ll>>&a,ll row,ll col){
-    for(ll i=0;i<8;i++){
+bool safe(vector<vector<ll>>&a,int row,int col){
+    for(int i=0;i<8;i++){
         if(a[row][i]!="Q")
         return true;
     }
-    for(ll i=0;i<8;i++){
+    for(int i=0;i<8;i++){
         if(a[i][col]!="Q")
         return true;
     }
-    for(ll i=row, j=col;i<8 && j<8;i++,j++){
+    for(int i=row, j=col;i<8 && j<8;i++,j++){
         if(a[i][j]!="Q"){
             return true;
         }
@@ -21,8 +21,8 @@ bool safe(vector<vector<ll>>&a,ll row,ll col){
     return false;
 }
 
-void placequeen(){
-
+void placequeens(vector<vector<ll>>&a ){
+    for(int)
 }
 
 int main() {
