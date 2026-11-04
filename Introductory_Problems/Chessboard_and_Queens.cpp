@@ -4,7 +4,7 @@ using ll = long long;
 
 constexpr ll MOD = 1e9 + 7;
 
-bool safe(vector<vector<ll>>&a,int row,int col){
+bool safe(vector<vector<char>>&a,int row,int col){
     for(int i=0;i<8;i++){
         if(a[row][i]!="Q")
         return true;
@@ -21,11 +21,20 @@ bool safe(vector<vector<ll>>&a,int row,int col){
     return false;
 }
 
-void placequeens(vector<vector<ll>>&a ){
-    for(int)
+void placequeens(vector<vector<char>>&a,int row,int col){
+    if(safe(a,row,col))
+    {
+        a[row][col]='Q';
+        
+    }
+    if(row>=8 && col>=8)
+    return 
+    placequeens(vector<vector<char>>&a,int row,int col)
+
+    
 }
 
 int main() {
-    vector<vector<ll>>a(8,vector<ll>(8));
+    vector<vector<char>>a(8,vector<char>(8));
     return 0;
 }
