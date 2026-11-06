@@ -24,10 +24,10 @@ int main() {
         // }
         string res;
         int games=a+b;
-        if(games>n) cout<<"No"<<"\n";
-        else if(max_ab>=1 && min_ab<1) cout<<"No"<<"\n";
+        if(games>n) cout<<"NO"<<"\n";
+        else if(max_ab>=1 && min_ab<1) cout<<"NO"<<"\n";
         else{
-            cout<<"Yes"<<endl;
+            cout<<"YES"<<endl;
             //rotate to left, size of vector is no of games played, rotate the number of times b wins
             rotate(a1.begin(),a1.begin()+b,a1.begin()+games);
             for(int i=0;i<n;i++){
