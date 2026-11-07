@@ -4,6 +4,7 @@ using ll = long long;
 
 constexpr ll MOD = 1e9 + 7;
 
+
 int main() {
     int n;
     cin>>n;
