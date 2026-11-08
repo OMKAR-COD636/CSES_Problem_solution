@@ -4,6 +4,16 @@ using ll = long long;
 
 constexpr ll MOD = 1e9 + 7;
 
+void checkmoves(vector<vector<int>>&board,int a,int b,vector<pair<int,int>>&move){
+    if((a-2)>=0 && (b-1)>=0) move.push_back({(a-2),(b-1)});
+    if((a-2)>=0 && (b-1)>=0) move.push_back({(a-2),(b-1)});
+    if((a-2)>=0 && (b-1)>=0) move.push_back({(a-2),(b-1)});
+    if((a-2)>=0 && (b-1)>=0) move.push_back({(a-2),(b-1)});
+    if((a-2)>=0 && (b-1)>=0) move.push_back({(a-2),(b-1)});
+    if((a-2)>=0 && (b-1)>=0) move.push_back({(a-2),(b-1)});
+    if((a-2)>=0 && (b-1)>=0) move.push_back({(a-2),(b-1)});
+    if((a-2)>=0 && (b-1)>=0) move.push_back({(a-2),(b-1)});
+}
 
 int main() {
     int n;

@@ -12,7 +12,6 @@
     sort(w.begin(),w.end());
     int l=0,h=n-1,count=0;
     while(l<=h){
-        //debug
         count++;
         if(w[l]+w[h]<=x){
             l++;
