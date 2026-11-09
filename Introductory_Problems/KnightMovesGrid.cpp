@@ -17,32 +17,7 @@ vector<pair<int,int>> checkmoves(int a,int b,int n){
     return move;
 }
 
-void visit(vector<vector<int>>&board,int row,int col,unordered_map<int,bool>&m,int count,int visited,int n){
-    if(visited==(n*n)){
-        return;
-    }
-    vector<pair<int,int>>moves=checkmoves(row,col,n);
-    m[board[row][col]]=true;
-    for(auto &it : moves) {
-        int x = it.first;
-        int y = it.second;
-        if(board[x][y]==0){
-            board[x][y]=count;
-            visited++;
-        }
-    }
-    for(auto &it : moves) {
-        int x = it.first;
-        int y = it.second;
-        if(m[board[x][y]]){
-            continue;
-        }
-        visit(board,x,y,m,count+1,visited,n);
-    }
-    
-    
-    
-}
+//requires BFS instead of Recursive DFS
 
 int main() {
     int n;
